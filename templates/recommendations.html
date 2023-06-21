@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recommendations</title>
+    <style>
+        .recommendation {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Recommendations</h1>
+    {% for recommendation in recommendations %}
+    <div class="recommendation">
+        Here is your Recommendation:<br><br>
+        {{ recommendation }}<br>
+    </div>
+    {% endfor %}
+</body>
+
+</html>
